@@ -1,4 +1,4 @@
-{% set version = '2.2.0' %}
+{% set version = "2.5.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/mapview_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/mapview/mapview_{{ version }}.tar.gz
-  sha256: e7527f9c10ac2eaf282c26d60147a52ad3a96095c67334eb76dfe50ae19e298f
+  sha256: ee565f2facd64a648a73fa3f8ad8d9862d2fdc1858bf5038d27cec4ecb9d2c58
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   script: R CMD INSTALL --build .
   skip: True  # [win]
   rpaths:
