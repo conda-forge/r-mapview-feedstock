@@ -32,38 +32,43 @@ requirements:
     - {{ compiler('m2w64_cxx') }}  # [win]
   host:
     - r-base
-    - r-rcpp
+    - r-rcpp >=0.11.3
     - r-base64enc
     - r-brew
-    - r-gdalutils
     - r-htmltools
     - r-htmlwidgets
     - r-lattice
-    - r-leaflet
+    - r-leaflet >=1.0.0
     - r-png
     - r-raster
     - r-satellite
     - r-scales >=0.2.5
     - r-sf
     - r-sp
+    - r-stars
+    - r-svglite
+    - r-uuid
     - r-viridislite
     - r-webshot
   run:
     - r-base
-    - r-rcpp
+    - {{native}}gcc-libs         # [win]
+    - r-rcpp >=0.11.3
     - r-base64enc
     - r-brew
-    - r-gdalutils
     - r-htmltools
     - r-htmlwidgets
     - r-lattice
-    - r-leaflet
+    - r-leaflet >=1.0.0
     - r-png
     - r-raster
     - r-satellite
     - r-scales >=0.2.5
     - r-sf
     - r-sp
+    - r-stars
+    - r-svglite
+    - r-uuid
     - r-viridislite
     - r-webshot
 
