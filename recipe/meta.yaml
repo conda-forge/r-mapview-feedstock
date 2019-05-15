@@ -1,4 +1,4 @@
-{% set version = '2.2.0' %}
+{% set version = '2.7.0' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/mapview_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/mapview/mapview_{{ version }}.tar.gz
-  sha256: e7527f9c10ac2eaf282c26d60147a52ad3a96095c67334eb76dfe50ae19e298f
+  sha256: b083db61cb69a75f0a7d4d8ad505e29154d1d50009af839e8dc60278383c0ab3
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   script: R CMD INSTALL --build .
   skip: True  # [win]
   rpaths:
@@ -25,45 +25,55 @@ build:
 
 requirements:
   build:
-    - posix                # [win]
-    - {{ compiler('c') }}        # [unix]
-    - {{ compiler('m2w64_c') }}  # [win]
-    - {{ compiler('cxx') }}        # [unix]
-    - {{ compiler('m2w64_cxx') }}  # [win]
+    - {{ compiler('c') }}        # [not win]
+    - {{ compiler('cxx') }}      # [not win]
+    - {{native}}toolchain        # [win]
+    - {{posix}}filesystem        # [win]
+    - {{posix}}make
+    - {{posix}}sed               # [win]
+    - {{posix}}coreutils         # [win]
+    - {{posix}}zip               # [win]
   host:
     - r-base
-    - r-rcpp
+    - r-rcpp >=0.11.3
     - r-base64enc
     - r-brew
-    - r-gdalutils
     - r-htmltools
     - r-htmlwidgets
     - r-lattice
-    - r-leaflet
+    - r-leafem
+    - r-leaflet >=2.0.0
+    - r-leafpop
     - r-png
     - r-raster
     - r-satellite
     - r-scales >=0.2.5
     - r-sf
     - r-sp
+    - r-svglite
+    - r-uuid
     - r-viridislite
     - r-webshot
   run:
     - r-base
-    - r-rcpp
+    - {{native}}gcc-libs         # [win]
+    - r-rcpp >=0.11.3
     - r-base64enc
     - r-brew
-    - r-gdalutils
     - r-htmltools
     - r-htmlwidgets
     - r-lattice
-    - r-leaflet
+    - r-leafem
+    - r-leaflet >=2.0.0
+    - r-leafpop
     - r-png
     - r-raster
     - r-satellite
     - r-scales >=0.2.5
     - r-sf
     - r-sp
+    - r-svglite
+    - r-uuid
     - r-viridislite
     - r-webshot
 
@@ -76,7 +86,7 @@ about:
   home: https://cran.r-project.org/web/packages/mapview
   license: GPL (>= 3)
   license_file: LICENSE
-  summary: Methods to view spatial objects interactively.
+  summary: Methods to view spatial objects interactively
 
 extra:
   recipe-maintainers:
