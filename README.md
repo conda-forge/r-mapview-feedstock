@@ -1,77 +1,23 @@
 About r-mapview
 ===============
 
-Home: https://cran.r-project.org/web/packages/mapview
+Home: https://github.com/r-spatial/mapview
 
-Package license: GPL (>= 3)
+Package license: GPL-3.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mapview-feedstock/blob/master/LICENSE.txt)
 
-Summary: Methods to view spatial objects interactively
+Summary: Quickly and conveniently create interactive visualisations of spatial data with or without background maps. Attributes of displayed features are fully queryable via pop-up windows. Additional functionality includes methods to visualise true- and false-color raster images and bounding boxes.
 
 Current build status
 ====================
 
 
-<table>
-    
-  <tr>
-    <td>Azure</td>
+<table><tr><td>All platforms:</td>
     <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4223&branchName=master">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mapview-feedstock?branchName=master">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>linux_64_r_base4.0</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4223&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mapview-feedstock?branchName=master&jobName=linux&configuration=linux_64_r_base4.0" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_r_base4.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4223&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mapview-feedstock?branchName=master&jobName=linux&configuration=linux_64_r_base4.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_r_base4.0</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4223&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mapview-feedstock?branchName=master&jobName=osx&configuration=osx_64_r_base4.0" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_r_base4.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4223&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mapview-feedstock?branchName=master&jobName=osx&configuration=osx_64_r_base4.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_r_base4.0</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4223&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mapview-feedstock?branchName=master&jobName=win&configuration=win_64_r_base4.0" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_r_base4.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4223&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mapview-feedstock?branchName=master&jobName=win&configuration=win_64_r_base4.1" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=4223&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-mapview-feedstock?branchName=master">
+      </a>
     </td>
   </tr>
 </table>
@@ -169,5 +115,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@conda-forge/r](https://github.com/conda-forge/r/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
