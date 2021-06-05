@@ -1,4 +1,4 @@
-{% set version = "2.9.0" %}
+{% set version = "2.10.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/mapview_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/mapview/mapview_{{ version }}.tar.gz
-  sha256: 170cb2b5e67cbeb177f87bd2eab1ecabc44a1042addbcd95a85b2ec4a00eb690
+  sha256: b597902c654b9abf1163bb9d4f1044fef85d0a52c8dc6538ca46b0024f63baaa
 
 build:
   number: 0
