@@ -1,11 +1,11 @@
-About r-mapview
-===============
+About r-mapview-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mapview-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/r-spatial/mapview
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-mapview-feedstock/blob/main/LICENSE.txt)
 
 Summary: Quickly and conveniently create interactive visualisations of spatial data with or without background maps. Attributes of displayed features are fully queryable via pop-up windows. Additional functionality includes methods to visualise true- and false-color raster images and bounding boxes.
 
