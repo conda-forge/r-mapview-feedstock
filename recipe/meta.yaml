@@ -1,4 +1,4 @@
-{% set version = "2.11.0" %}
+{% set version = "2.11.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mapview_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mapview/mapview_{{ version }}.tar.gz
-  sha256: 87f8cf562a0918201082a743438b9af47429bdb8871511235d72505107f4d30a
+  sha256: 414d7f732b3aaf62005e279d7b0febf50aed2183bf05522c4fccaa92117328b0
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   script: R CMD INSTALL --build .
   rpaths:
