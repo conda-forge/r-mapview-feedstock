@@ -1,4 +1,4 @@
-{% set version = "2.11.3" %}
+{% set version = "2.11.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/mapview_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/mapview/mapview_{{ version }}.tar.gz
-  sha256: 8cb5acbf4f98ceb20de4d19a6575baed2972343e49184e46a6a021123277ca9d
+  sha256: 61c44b7bcf2692a6d24015f0ddb98d20df307460a577cca1754c7c9447483069
 
 build:
   number: 0
