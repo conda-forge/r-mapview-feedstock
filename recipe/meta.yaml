@@ -12,7 +12,7 @@ source:
   sha256: 61c44b7bcf2692a6d24015f0ddb98d20df307460a577cca1754c7c9447483069
 
 build:
-  number: 0
+  number: 1
   noarch: generic
   script: R CMD INSTALL --build .
   rpaths:
